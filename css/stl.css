@@ -114,10 +114,6 @@ html {
     height:40px;
 }
 
-
-.main-paragraph__text_font-family_TTlakes {
-    font-family: 'TT Lakes';
-}
 .main-paragraph {
     display: flex;
     flex-direction: column;
@@ -129,6 +125,7 @@ html {
     width: 288px;
     height: auto;
     margin: 10px 0px 0px 15px;
+    font-family: 'TT Lakes';
 }
 .button-read-more {
     display: flex;
