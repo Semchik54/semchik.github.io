@@ -248,8 +248,8 @@ html {
     .header-page_position_absolyte {
         position:absolute;
     }
-    .header-page_right_0{
-        right:0;
+    .header-page_right_100px{
+        right:100px;
     }
     .header-nav {
         display: flex;
