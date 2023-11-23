@@ -91,6 +91,17 @@ html {
     animation-iteration-count: infinite;
     animation-direction:alternate ;
 }
+.logo__icon:focus{
+    animation-name: logo-scale;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+}
+.logo__icon:active{
+   transform: scale(0.95);
+   transition: transform 0.7s;
+   animation: none;
+}
 
 .aside__close{
     transform: translate(15px, 25px);
@@ -98,6 +109,10 @@ html {
 .aside__logo{
     position: absolute;
     transform: translate(70px, -25px);
+}
+.aside__logo:focus{
+    outline: 2px solid #B8FFEC;
+    border-radius: 3px ;
 }
 .aside__serch{
     position: absolute;
@@ -186,6 +201,7 @@ html {
     margin-left: 10px;
     cursor:default;
     pointer-events: none;
+    transform: translateX(10px) translateY(0px);
 }
 .nav__link--active::before {
     content: "";
@@ -219,6 +235,10 @@ html {
     color: #1B1C21;
     transition: color 0.2s
 }
+.aside__link:focus{
+    outline: 2px solid #B8FFEC;
+    border-radius: 3px ;
+}
 .aside__link:active{
     color:#FF3E79;
 }
@@ -239,9 +259,15 @@ html {
     padding: 5px;
     background-color: inherit;
 }
+.lang-button--active{
+    pointer-events: none;
+    color: #7E7E82;
+}
 .lang-button:hover{
     color: #7E7E82;
 }
 .lang-button:focus{
     color: #7E7E82;
+    outline: 2px solid #B8FFEC;
+    border-radius: 3px;
 }
