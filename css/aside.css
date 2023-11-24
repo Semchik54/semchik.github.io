@@ -201,7 +201,10 @@ html {
     margin-left: 10px;
     cursor:default;
     pointer-events: none;
-    transform: translateX(10px) translateY(0px);
+   
+}
+.nav__link--active:focus{
+    transform: translateX(0px)
 }
 .nav__link--active::before {
     content: "";
@@ -215,16 +218,15 @@ html {
 }
 
 
+
 .aside__f-back{
-    margin-left: 15px;
-    margin-top: 20px;
-}
-.f-back__list{
     display: flex;
     list-style-type: none;
     justify-content: flex-start;
     align-items:center;
     gap: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 
 
@@ -233,7 +235,7 @@ html {
     margin: 20px 15px;
     text-decoration: none;
     color: #1B1C21;
-    transition: color 0.2s
+    transition: color 0.2s;
 }
 .aside__link:focus{
     outline: 2px solid #B8FFEC;
