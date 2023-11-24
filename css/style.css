@@ -184,10 +184,6 @@ html {
    transition: transform 0.7s;
    animation: none;
 }
-.aside__logo:focus{
-    outline: 2px solid #B8FFEC;
-    border-radius: 3px ;
-}
 .a-nav__link:hover{
     color:#7E7E82;
     transition:all 0.3s ;
