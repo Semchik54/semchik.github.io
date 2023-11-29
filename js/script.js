@@ -6,13 +6,10 @@ var expandText = document.querySelector('.expand__text')
 expand.addEventListener("click", (event) => {
     if (brendList.ariaExpanded === 'false') {
         brendList.setAttribute('aria-Expanded', 'true')
-        brendList.classList.add("brend__list--expand")
-         
-         
+        brendList.classList.add("brend__list--expand")   
     } else {
         brendList.setAttribute('aria-Expanded', 'false')
-        brendList.classList.remove("brend__list--expand")  
-        
+        brendList.classList.remove("brend__list--expand")    
     }
 }  
 )
