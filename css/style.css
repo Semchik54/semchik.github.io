@@ -45,6 +45,16 @@ html {
     margin: 0 10px;
     height: 130px;
 }
+.brend__swiper::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 26px;
+    height: 73px;
+    top: 15px;
+    right: -1px;
+    z-index: 10;
+}
 .brend__list {
     display: flex;
     flex-direction: column;
@@ -142,6 +152,9 @@ html {
         margin: 10px 15px 0px;
         overflow-x:visibles;
     }
+    .brend__swiper::after{
+        display: none;
+    }
     .brend__list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -154,9 +167,6 @@ html {
     }
     .brend__item{
         margin: 0;
-    }
-    .brend__list::after{
-        display: none;
     }
     .brend__item{
         width: 100%;
